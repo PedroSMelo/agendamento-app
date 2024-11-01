@@ -21,7 +21,7 @@ class Mensagem extends Model
     
     public static function searchTittle(){
 
-        $teste = DB::table('mensagens')->select('titulo', 'mensagem')->get();
+        $teste = DB::table('mensagens')->select('tipo', 'corpo')->get();
         return $teste;
     }   
 
